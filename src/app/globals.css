@@ -2,3 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+section.hero {
+    @apply grid;
+    grid-template-columns: 40% 60%; /* Anda dapat menggunakan nilai persen untuk kolom grid */
+}
+
+/* Gunakan koma (,) untuk menambahkan beberapa properti @apply dalam satu baris */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    @apply block w-full my-4 rounded-xl; /* Memperbaiki sintaksis block-w-full menjadi block w-full */
+    @apply border p-2 border-gray-300 bg-gray-200;
+}
+
+button {
+    @apply block w-full text-gray-500 font-semibold; /* Memperbaiki sintaksis block-w-full menjadi block w-full */
+    @apply border border-gray-700 rounded-xl px-6 py-2;
+}
+
+button[type="submit"], .submit {
+    @apply border-8 bg-primary text-white; /* Penambahan ukuran border-8 */
+}
